@@ -157,6 +157,7 @@ function validation(e){
 
 // ------------------login form validation function-------------------
 
+let login_form=document.getElementById("login_form")
 let user_email=document.getElementById("user_email")
 let user_password=document.getElementById("user_password")
 let password_span=document.getElementById("password_span")
