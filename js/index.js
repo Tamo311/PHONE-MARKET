@@ -194,5 +194,8 @@ function loginValidation(){
                  password_span.style.opacity="0"
              }
       }
+        if(mystatus===true){
+        login_form.setAttribute("action","./main.html")
+     }
        return mystatus
     }
