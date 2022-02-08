@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Phone Market</title>
+</head>
+<body>
+    <div id="container">
+            <h2> NEW GENERETION</h2>
+        <div class="container">
+                <div class="banner_img">
+                    <img class="img front" height="500px"  src="./images/iphone-13-front.png" alt="">
+                    <img class="img back" height="500px"  src="./images/iphone-13-back.png" alt="">
+                </div>
+                    <div class="right">
+                        <div class="img_right">
+                            <img class="img front" height="500px"  src="./images/iphone-13-front.png" alt="">
+                        </div>
+
+            <!--------------- login form section  ------------->
+
+                        <div class="form_section login">
+                            <h4 class="log_h4"> <span> LEARN MORE</span></h4>
+                            <form action="./main.html" class="login_form" id="login_form" onsubmit=" return loginValidation()">
+                                <div class="col-3 input-effect">
+                                    <input class="effect-20" id="user_email" type="email"  autocomplete="off" value="" >
+                                    <label id="label">Email</label>
+                                    <span class="focus-border">
+                                        <i></i>
+                                    </span>
+                                </div>
+                                    <div class="warning">
+                                        <span id="email_span">  <i class="fas fa-exclamation-circle"></i> enter email </span>
+                                    </div>
+                                <div class="col-3 input-effect">
+                                    <input class="effect-20 password" id="user_password" type="password" autocomplete="off" value=""  >
+                                    <label>Password</label>
+                                    <span class="focus-border">
+                                        <i></i>
+                                    </span>
+                                    <div class="password_check">
+                                        <i class="fas fa-eye show_password"></i>
+                                        <i class="fas fa-eye-slash hide_password"></i>
+                                    </div>
+                                </div>
+                                    <div class="warning">
+                                        <span id="password_span"> <i class="fas fa-exclamation-circle"></i>  enter password</span>
+                                    </div>
+                                <h6 id="show_reg_form" >not registered?</h6>
+                                <div class="col-3 input-effect">
+                                    <input type="submit" id="submit_login" class="submit" value="sign in">
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+   </div>
+
+          <!-- -------------------regitration section -->
+               
+        <div class="form_section registration" id="registration"  >
+            <a href="./index.html" class="close_btn"><i class="fas fa-times"></i></a>
+            <h4 class="reg_h4"> <span> REGISTRATION</span></h4>
+            <form action="" class="registration_form"  id="reg_form"  >
+                <div class="col-3 input-effect">
+                    <input class="effect-20" id="userName" type="text" autocomplete="off"  value="" >
+                    <label> User Name </label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                    <div class="warning">
+                      <span id="name_warning"> <i class="fas fa-exclamation-circle" ></i> enter user name </span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-20" id="age" type="number"  value="" >
+                    <label>Age</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                    <div class="warning">
+                        <span id="age_warning"><i class="fas fa-exclamation-circle" ></i> enter age</span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-20" id="email" type="text" autocomplete="off"  value=""  >
+                    <label>Email</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                    <div class="warning">
+                      <span id="email_warning"><i class="fas fa-exclamation-circle" ></i> enter email address </span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-20 password" id="password" type="password" value="" >
+                    <label>Password</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                    <div class="password_check">
+                        <i class="fas fa-eye show_password"></i>
+                        <i class="fas fa-eye-slash hide_password"></i>
+                    </div>
+                </div>
+                    <div class="warning">
+                       <span id="passw_warning"><i class="fas fa-exclamation-circle" ></i> enter password </span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-20 password" id="confirm_password" type="password"  value=""  >
+                    <label> Confirm Password</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                    <div class="password_check">
+                        <i class="fas fa-eye show_password"></i>
+                        <i class="fas fa-eye-slash hide_password"></i>
+                    </div>
+                </div>
+                    <div class="warning">
+                      <span id="conf_passw_warning"><i class="fas fa-exclamation-circle" ></i> enter confirm password</span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input type="submit" id="submit" class="submit" value="submit"  >
+                </div>
+            </form>
+        </div> 
+
+       <!------- succsess  registration section -->
+
+        <div class="form_section registration " id="succsess" >
+            <h4 class="reg_h4 succsess_h4"> <span> Registration Finished <br> Succsessfully !</span></h4>
+             <a href="./index.html" ><input type="submit" id="ok" class="submit ok" value="close" ></a> 
+        </div> 
+        <!--============ loading div -->
+        <div id="loading">
+            <img id="loading-image" src="./images/loading.gif" alt="loading...">
+        </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
